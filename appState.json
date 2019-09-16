@@ -1,0 +1,110 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "74aeb406-f6f7-43a1-9c3e-76c1ab9d5d4b": {
+        "id": "74aeb406-f6f7-43a1-9c3e-76c1ab9d5d4b",
+        "parent": null,
+        "name": "testgcpawsenvirnmtv",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "6e3f7cd9-cc11-402b-b04f-411ce34aa737"
+        ],
+        "isRemovable": false,
+        "filePath": "testgcpawsenvirnmtv"
+      },
+      "6e3f7cd9-cc11-402b-b04f-411ce34aa737": {
+        "id": "6e3f7cd9-cc11-402b-b04f-411ce34aa737",
+        "parent": "74aeb406-f6f7-43a1-9c3e-76c1ab9d5d4b",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testgcpawsenvirnmtv/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 1
+        },
+        "triggers": [
+          {
+            "resourceName": "pubsubcloudBuilds",
+            "config": {}
+          }
+        ]
+      },
+      "eac518a9-032a-421d-a13d-e9c67495874f": {
+        "id": "eac518a9-032a-421d-a13d-e9c67495874f",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.testgcpawsenvirnmtvfunction = require(\"./testgcpawsenvirnmtv/function.js\").handler;"
+      },
+      "04f17c86-6186-4aeb-8462-e1f728d5c670": {
+        "id": "04f17c86-6186-4aeb-8462-e1f728d5c670",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "74aeb406-f6f7-43a1-9c3e-76c1ab9d5d4b",
+    "openFiles": [
+      "6e3f7cd9-cc11-402b-b04f-411ce34aa737"
+    ],
+    "currentFileId": "6e3f7cd9-cc11-402b-b04f-411ce34aa737",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      },
+      "pubsubcloudBuilds": {
+        "name": "pubsubcloudBuilds",
+        "type": "pubsub",
+        "config": {
+          "mode": 1,
+          "topic": {
+            "name": "cloud-builds",
+            "subscriptions": []
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "testgcpawsenvirnmtv",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1568622350477
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "testgcpawsenvirnmtv",
+      "url": "https://github.com/Indunil1992/testgcpawsenvirnmtv"
+    }
+  }
+}
